@@ -1,0 +1,27 @@
+{
+  "name": "crossword",
+  "type": "module",
+  "version": "0.0.1",
+  "scripts": {
+    "dev": "astro dev",
+    "build": "astro build",
+    "preview": "astro preview",
+    "astro": "astro",
+    "check": "astro check && svelte-check src",
+    "server:dev": "bun run --watch src/server/server.ts",
+    "test": "bun test"
+  },
+  "dependencies": {
+    "@astrojs/check": "^0.9.4",
+    "@astrojs/svelte": "7.0.5",
+    "@fontsource/atkinson-hyperlegible-next": "^5.2.2",
+    "astro": "5.4.2",
+    "svelte": "^5.20.2",
+    "typescript": "^5.7.3",
+    "valibot": "^1.0.0-rc.3"
+  },
+  "devDependencies": {
+    "@types/bun": "^1.2.4",
+    "svelte-check": "^4.1.4"
+  }
+}

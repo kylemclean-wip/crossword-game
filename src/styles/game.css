@@ -1,0 +1,63 @@
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  --page-bg-color: #eee;
+  --page-fg-color: #000;
+  --control-bg-color: #fff;
+  --control-bg-color-hover: #eee;
+  --control-bg-color-active: #ccc;
+  --control-fg-color: #000;
+  --border-size: 4px;
+  --border-color: var(--control-fg-color);
+  --control-border: var(--border-size) solid var(--border-color);
+  --control-padding: 0.6rem;
+
+  --control-shadow: var(--border-size) var(--border-size) 0 0
+    var(--border-color);
+
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  background-color: var(--page-bg-color);
+  color: var(--page-fg-color);
+  font-family: "Atkinson Hyperlegible Next", sans-serif;
+}
+
+img,
+picture,
+video,
+canvas,
+svg {
+  display: block;
+}
+
+button {
+  font-size: 1.25rem;
+  font-weight: bold;
+  padding: var(--control-padding);
+  background-color: var(--control-bg-color);
+  border: var(--control-border);
+  box-shadow: var(--control-shadow);
+  cursor: pointer;
+}
+
+button:hover {
+  background-color: var(--control-bg-color-hover);
+}
+
+button:active {
+  background-color: var(--control-bg-color-active);
+  transform: translate(var(--border-size), var(--border-size));
+  box-shadow: none;
+}
